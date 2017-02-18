@@ -8,8 +8,8 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
+        <link href="/css/app.css" rel="stylesheet" type="text/css">
+        <link href="/css/so2platform/styles.css" rel="stylesheet" type="text/css">
         <!-- Styles -->
         <style>
             html, body {
@@ -65,7 +65,7 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="flex-center position-ref full-height" id="app">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @if (Auth::check())
@@ -78,9 +78,12 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+                <div class="title m-b-md"> </div>
+
+                <so2platform-panel>
+                    <template slot="title">Laravel</template>
+                    <template slot="body">Panel Body</template>
+                </so2platform-panel>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
@@ -91,5 +94,18 @@
                 </div>
             </div>
         </div>
+        <script>
+            window.Laravel = {
+                'csrfToken' : '{{csrf_token()}}'
+            };
+        </script>
+        <script src="/js/manifest.js"></script>
+        <script src="/js/vendor.js"></script>
+        <script src="/js/app.js"></script>
+        <script>
+            var app = new Vue({
+                el: '#app'
+            });
+        </script>
     </body>
 </html>
