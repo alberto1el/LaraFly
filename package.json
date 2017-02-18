@@ -13,5 +13,8 @@
     "laravel-mix": "^0.6.0",
     "lodash": "^4.16.2",
     "vue": "^2.0.1"
+  },
+  "dependencies": {
+    "patternfly": "^3.20.0"
   }
 }

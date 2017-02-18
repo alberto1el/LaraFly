@@ -1,20 +1,31 @@
 
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
+require('patternfly/node_modules/jquery');
+require('patternfly/node_modules/bootstrap');
+require('patternfly/node_modules/c3');
+require('patternfly/node_modules/d3');
+require('patternfly/node_modules/datatables');
+require('patternfly/node_modules/drmonty-datatables-colvis');
+require('patternfly/node_modules/datatables.net-colreorder');
+require('patternfly/dist/js/patternfly');
+require('patternfly/node_modules/patternfly-bootstrap-combobox/js/bootstrap-combobox');
+require('patternfly/node_modules/bootstrap-datepicker');
+require('patternfly/node_modules/moment');
+require('patternfly/node_modules/eonasdan-bootstrap-datetimepicker');
+require('patternfly/node_modules/bootstrap-select');
+require('patternfly/node_modules/bootstrap-switch');
+require('patternfly/node_modules/bootstrap-touchspin');
+require('patternfly/node_modules/patternfly-bootstrap-treeview/src/js/bootstrap-treeview');
+require('patternfly/node_modules/google-code-prettify/src/prettify');
+require('patternfly/node_modules/jquery-match-height');
 
-require('./bootstrap');
+window._ = require('lodash');
+window.Vue = require('vue');
+window.axios = require('axios');
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
+window.axios.defaults.headers.common = {
+    'X-CSRF-TOKEN': window.Laravel.csrfToken,
+    'X-Requested-With': 'XMLHttpRequest'
+};
 
 Vue.component('so2platform-panel', require('./components/so2platform/panel.vue'));
 
-// const app = new Vue({
-//     el: '#app'
-// });
