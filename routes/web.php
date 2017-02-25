@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('patternfly.index');
+    return view('welcome');
 });
 
 Route::get('/home', 'HomeController@index');

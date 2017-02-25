@@ -1,11 +1,18 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+LaraFly
+--
 
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+    <img src="https://laravel.com/assets/img/components/logo-laravel.svg">
+    <img style="max-height:80pt;" src="https://www.patternfly.org/assets/img/patternfly-orb.svg">
 </p>
+
+<p align="center">
+    <a href="https://packagist.org/packages/laravel/framework">Laravel (MIT)</a> |
+    <a href="https://creativecommons.org/licenses/by/4.0/">Patternfly (CC BY 4.0)</a>
+</p>
+
+##Laravel 5.4 [Modern PHP Application Framework] + Patternfly 3.20 [Enterprise UI Framework]
+This project consists in a clean Laravel 5.4 installation with auth scaffolded and Patternfly 3.20 required via npm (and installed trough laravel mix)
 
 ## About Laravel
 
@@ -21,20 +28,26 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
 
-## Learning Laravel
+#About PatternFly
+PatternFly is a community project that promotes design commonality and improved user experience. Its offerings include open source code, patterns, style guides and an active community that helps support it all.
+-[Code](https://www.patternfly.org/download/)
+-[Pattern Library](https://www.patternfly.org/pattern-library/)
+-[Community](https://www.patternfly.org/community/)
+-[Styles](https://www.patternfly.org/styles/)
 
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
+#How to use it
+Since this project originated in order to have a quickstart of laravel + patternfly, everything is available out of the box after installation, here are the steps:
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+- Clone/download the project to a local directory
+- Prepare the project directory for web access and be sure to have a [Homestead](https://laravel.com/docs/5.4/homestead) compatible environment (nginx, php composer, etc)
+- Run composer install in the project root
+- Configure the Laravel environment file
+- Run php artisan migrate
+- Go to your browser and to your configured domain you should see the laravel welcome view.
+- Go to http://{your_domain}/register and register a new user to login and see the home
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+#Notes
+- This is a Laravel installation, so do not require on top of another laravel installation.
+- The mix scripts have already been ran, so the compiled css and js files are already in the public folder
+- Once the composer install and php artisan migrate commands have been ran the project should be accesible and work in a browser
+- A few patternfly components have been copied directly from patternfly.org website to the home view to show that it works, you can build/copy the ones you need
