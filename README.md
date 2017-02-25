@@ -51,3 +51,7 @@ Since this project originated in order to have a quickstart of laravel + pattern
 - The mix scripts have already been ran, so the compiled css and js files are already in the public folder
 - Once the composer install and php artisan migrate commands have been ran the project should be accesible and work in a browser
 - A few patternfly components have been copied directly from patternfly.org website to the home view to show that it works, you can build/copy the ones you need
+
+#How it looks?
+Really cool!
+<img src="http://dev3tec.s3.amazonaws.com/laraFly.png">
