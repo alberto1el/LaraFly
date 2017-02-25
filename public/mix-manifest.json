@@ -1,7 +1,3 @@
 {
-  "/js/vendor.js": "/js/vendor.js",
-  "/js/app.js": "/js/app.js",
-  "/css/app.css": "/css/app.css",
-  "/js/manifest.js": "/js/manifest.js",
-  "/css/so2platform/styles.css": "/css/so2platform/styles.css"
+  "/js/patternfly.js": "/js/patternfly.js"
 }
