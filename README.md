@@ -58,6 +58,7 @@ If you already have a Laravel 5.4 application, you can look into these files:
 - The only added npm dev-dependencies here are patternfly 3.20.0 and script-loader 0.7.0 [package.json](https://github.com/so2platform/LaraFly/blob/master/package.json)
 - The main mix file that declares the "build process" [webpack.mix.js](https://github.com/so2platform/LaraFly/blob/master/webpack.mix.js)
 - The script which requires patternfly's dependencies [resources/assets/js/patternfly.js](https://github.com/so2platform/LaraFly/blob/master/resources/assets/js/patternfly.js) (note that the normal laravel bootstrap.js file is integrated into this one, which includes axios, lodash, vue, etc)
+- After configuring your installation similar to this, you should run npm run dev (or production) and add the css and js files to your layout
 
 #How it looks?
 Really cool!
