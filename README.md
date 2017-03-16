@@ -8,7 +8,7 @@ LaraFly
 
 <p align="center">
     <a href="https://packagist.org/packages/laravel/framework">Laravel (MIT)</a> |
-    <a href="https://creativecommons.org/licenses/by/4.0/">Patternfly (CC BY 4.0)</a>
+    <a href="https://www.patternfly.org/">Patternfly (CC BY 4.0)</a>
 </p>
 
 ##Laravel 5.4 [Modern PHP Application Framework] + Patternfly 3.20 [Enterprise UI Framework]
