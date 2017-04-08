@@ -40,9 +40,12 @@ Since this project originated in order to have a quickstart of laravel + pattern
 
 - Clone/download the project to a local directory
 - Prepare the project directory for web access and be sure to have a [Homestead](https://laravel.com/docs/5.4/homestead) compatible environment (nginx, php composer, etc)
-- Run composer install in the project root
-- Configure the Laravel environment file
-- Run php artisan migrate
+- cd to project root
+- Run: composer install
+- Run: cp .env.example .env 
+- Run: php artisan key:generate
+- Configure the Laravel environment file (database name, user, host).
+- Run php artisan migrate.
 - Go to your browser and to your configured domain you should see the laravel welcome view.
 - Go to http://{your_domain}/register and register a new user to login and see the home
 
