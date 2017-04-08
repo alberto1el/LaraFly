@@ -74,7 +74,11 @@ We accept contributions via Pull Requests on Github.
 
 ## Credits
 - alberto1el
-- https://github.com/so2platform/LaraFly/graphs/contributors
+- Issue reporters:
+    - [netinteractive](https://github.com/netinteractive)
+    - [aznain](https://github.com/aznain)
+- Pull requests:
+    - [atefBB](https://github.com/atefBB)
 
 ## License
 The MIT License (MIT).
