@@ -66,3 +66,15 @@ If you already have a Laravel 5.4 application, you can look into these files:
 ## How it looks?
 Really cool!
 <img src="http://dev3tec.s3.amazonaws.com/laraFly.png">
+
+
+## Contributing
+Contributions are welcome and will be fully credited.
+We accept contributions via Pull Requests on Github.
+
+## Credits
+- alberto1el
+- https://github.com/so2platform/LaraFly/graphs/contributors
+
+## License
+The MIT License (MIT).
