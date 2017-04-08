@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/{pattern}/{example}', function ($pattern, $example) {
+    return view('patternfly.'.$pattern.'.'.$example);
+});
+
 Route::get('/home', 'HomeController@index');
 
 Auth::routes();
